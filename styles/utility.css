@@ -1,0 +1,24 @@
+.mt220{
+  margin-top: 220px;
+}
+.mt145{
+  margin-top: 145px;
+}
+.mt50{
+  margin-top: 50px;
+}
+.umx10{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.upx-30{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.upy-20{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.br-5{
+  border: 5px solid red;
+}

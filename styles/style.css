@@ -1,0 +1,174 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    
+}
+
+/* .loading-screen */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 26, 46, 0.9);
+    /* Semi-transparent background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Ensure it is on top of other content */
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    /* Light grey */
+    border-top: 8px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* end .loading-screen */
+
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; /* Optional neon effect */
+    /* text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; */
+}
+
+.hover {
+    transition: color 0.3s ease;
+}
+
+.hover:hover {
+    color: #5e4d5d;
+}
+
+.neon-button {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #fff, 0 0 20px #ff00ff, 0 0 20px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
+}
+
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 1);
+    /* Add bottom shadow */
+    z-index: 0;
+    transform: translate(-50%, -50%);
+
+}
+
+.video-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+/* Parallax Container */
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Parallax Image */
+.parallax-image {
+    background-image: url('../src/images/robot.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.parallax-text {
+    margin-top: 50px;
+}
+
+.parallax-text h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.parallax-text p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.animation-text {
+    display: inline-block;
+    /* Keeps the text inline and centered */
+    white-space: nowrap;
+    /* Prevents text wrapping */
+    overflow: hidden;
+    /* Ensures the text is hidden while animating */
+    text-align: center;
+    /* Keeps the text centered */
+    animation: typing 2s;
+    text-shadow: none;
+    /* Remove shadow during animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        /* Start with no visible text */
+    }
+
+    to {
+        width: 40%;
+        /* Reveal the entire text */
+    }
+
+}
+
+.section-header {
+    position: relative;
+    text-align: center;
+    margin-top: -50px; /* Adjust this value to position it closer to the top */
+    padding: 20px 0;
+    z-index: 10;
+}
+
+.section-header h1 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    color: #fff; /* Text color */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    left: 100%;
+    display: block;
+    position: relative;
+    margin: 3rem;
+    
+}
+
